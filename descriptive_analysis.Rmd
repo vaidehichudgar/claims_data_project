@@ -1,0 +1,19 @@
+---
+title: "descriptive_analysis"
+output: html_document
+---
+
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(haven)
+library(dplyr)
+```
+
+```{r}
+medical_q1 = 
+  read_excel("data/Large Med 2022 Q1.xlsx") |> 
+  janitor::clean_names()
+```
+
